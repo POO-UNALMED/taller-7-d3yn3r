@@ -1,6 +1,6 @@
 package comunicacion;
 
-public abstract class Libro extends Escrito {
+public class Libro extends Escrito {
 	String co_autor;
 	String editorial;
 	String edicion;

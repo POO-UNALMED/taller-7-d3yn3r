@@ -1,6 +1,6 @@
 package comunicacion;
 
-public abstract class Periodico extends Escrito {
+public class Periodico extends Escrito {
 	String fecha;
 	String primicia;
 	String interpretacion;

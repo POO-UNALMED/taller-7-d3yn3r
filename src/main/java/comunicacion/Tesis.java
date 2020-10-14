@@ -1,6 +1,6 @@
 package comunicacion;
 
-public abstract class Tesis extends Escrito {
+public class Tesis extends Escrito {
 	String idea;
 	String[] argumentos = new String[2];
 	String conclusion ;
