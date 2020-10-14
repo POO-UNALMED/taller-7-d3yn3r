@@ -38,6 +38,7 @@ public abstract class Libro extends Escrito {
 	public void setEdicion(String edicion) {
 		this.edicion=edicion;
 	}
+	
 	public void setInterpretacion(String interpretacion) {
 		this.interpretacion = interpretacion;
 	}

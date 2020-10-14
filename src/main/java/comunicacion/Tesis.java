@@ -20,7 +20,36 @@ public abstract class Tesis extends Escrito {
 	public String getIdea() {
 		return idea;
 	}
+	
 	public void setIdea(String idea) {
 		this.idea = idea;
+	}
+	
+	public String[] getArgumentos() {
+		return argumentos;
+	}
+	
+	public void setArgumentos(String[] argumentos) {
+		this.argumentos=argumentos;
+	}
+	
+	public String getConclusion() {
+		return conclusion;
+	}
+	
+	public void setConclusion(String conclusion) {
+		this.conclusion = conclusion;
+	}
+	
+	public String getReferencias() {
+		return referencias;
+	}
+	
+	public void setReferencias(String referencias) {
+		this.referencias = referencias;
+	}
+	
+	public void setInterpretacion(String interpretacion) {
+		this.interpretacion = interpretacion;
 	}
 }
