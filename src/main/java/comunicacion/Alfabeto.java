@@ -10,7 +10,17 @@ public abstract class Alfabeto extends Pictograma{
 		this.interpretacion=interpretacion;
 		
 	}
-	
+	 public String[] getLetras() {
+		 return letras;
+	 }
+	 
+	 public void setLetras(String[] letras) {
+		 this.letras=letras;
+	 }
+	 
+	 public void setInterpretacion(String interpretacion) {
+			this.interpretacion = interpretacion;
+		}
 	
 
 }
