@@ -22,5 +22,19 @@ public abstract class Fabula extends Escrito {
 		this.interpretacion = interpretacion;
 	}
 	
+	public int palabrasTotales(int palabrasPagina) {
+		return this.getPaginas() * palabrasPagina;
+	}
+	
+	public String interpretacion() {
+		return interpretacion;
+	}
+	
+	public String toString() {
+		String sol = this.resumen() + "\n";
+		sol += this.ensenanza;
+		return sol;
+	}
+	
 
 }

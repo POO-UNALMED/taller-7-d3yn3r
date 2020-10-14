@@ -20,6 +20,21 @@ public abstract class Alfabeto extends Pictograma{
 	 
 	 public void setInterpretacion(String interpretacion) {
 			this.interpretacion = interpretacion;
+	}
+	 public int cantidadLetras() {
+			return letras.length;
+	}
+	 public String interpretacion() {
+			return interpretacion;
+	}
+	
+	 public String toString() {
+			String sol = "";
+			for (int i = 0; i < 25; i ++) {
+				sol = sol + this.letras[i] + ", ";
+			}
+			sol = sol + this.letras[25];
+			return sol;
 		}
 	
 

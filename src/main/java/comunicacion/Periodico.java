@@ -32,5 +32,17 @@ public abstract class Periodico extends Escrito {
 	public void setInterpretacion(String interpretacion) {
 		this.interpretacion = interpretacion;
 	}
-
+	
+	public int palabrasTotales(int palabrasPagina) {
+		return this.getPaginas() * palabrasPagina * 10;
+	}
+	public String interpretacion() {
+		return interpretacion;
+	}
+	public String toString() {
+		String sol = this.resumen() + "\n";
+		sol += this.fecha  + "\n";
+		sol += this.primicia;
+		return sol;
+	}
 }

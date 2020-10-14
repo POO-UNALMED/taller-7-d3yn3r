@@ -43,6 +43,21 @@ public abstract class Libro extends Escrito {
 		this.interpretacion = interpretacion;
 	}
 	
+	public int palabrasTotales(int palabrasPagina) {
+		return this.getPaginas() * palabrasPagina * 2;
+	}
+	
+	public String interpretacion() {
+		return interpretacion;
+	}
+	
+	public String toString() {
+		String sol = this.resumen() + "\n";
+		sol += this.co_autor + "\n";
+		sol += this.editorial + "\n";
+		sol += this.edicion;
+		return sol;
+	}
 	
 
 }

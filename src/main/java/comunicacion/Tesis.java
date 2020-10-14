@@ -52,4 +52,22 @@ public abstract class Tesis extends Escrito {
 	public void setInterpretacion(String interpretacion) {
 		this.interpretacion = interpretacion;
 	}
+	
+	public int cantidadArgumentos() {
+		return argumentos.length;
+	}
+	public int palabrasTotales(int palabrasPagina) {
+		return this.getPaginas() * palabrasPagina * 5;
+	}
+	public String interpretacion() {
+		return interpretacion;
+	}
+	public String toString() {
+		String sol= this.resumen() + "\n";
+		sol += this.idea  + "\n";
+		sol += this.cantidadArgumentos()  + "\n";
+		sol += this.conclusion  + "\n";
+		sol += this.referencias;
+		return sol;
+	}
 }
